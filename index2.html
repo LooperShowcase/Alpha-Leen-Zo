@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <title>cars</title>
+    <style>
+/* Apply general styling to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Style the heading */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style the paragraph */
+#paragraph {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+/* Style the links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Style the unordered list */
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+/* Style list items */
+li {
+  margin: 10px;
+}
+
+/* Style the ordered list */
+ol {
+  padding-left: 20px;
+}
+
+/* Apply styles to the iframes */
+iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Style the hr elements */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  #paragraph {
+    padding: 10px;
+  }
+}
+
+    </style>
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAABs1BMVEUAAAD///8AAAIqKTErK
+    
+jC3tsIAAAg6OUcbGiIYFxtVVG--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">
+  </head>
+
+  <body>
+    <ul id="navbar">
+      <li id="navItem"><a href="index.html">Home</a></li>
+      <li id="navItem"><a href="index2.html">News</a></li>
+      <li id="navItem"><a href="#contact">Contact</a></li>
+      <li id="navItem"><a href="#about">About</a></li>
+    </ul>
+    
+
+    <h1></h1>
+    <hr />
+    <hr />
+
+<div id="paragraph">
+    <p>
+      The Chevy Corvette has been the gold standard for U.S. sports cars for most of its 70-year history, and the eighth-generation model continues to carry on that tradition. It more than holds its own compared to other similarly priced luxury sports cars like the Porsche Cayman and stacks up well against pricier rivals like the Porsche 911 and Audi R8. I drove the 2023 Chevrolet Corvette 3LT for a week and was consistently impressed by this American icon.
+      The 6.2-liter V8 delivered almost 500 horsepower, but the light frame made it seem even more powerful. Handling was hot-hatch-like with precise steering. Although I could still feel bumps in the road, they were smoothed out as much as could be expected for a car so low slung.
+      The most surprising aspect was the cargo space. The midengine layout would appear to cut cargo space to nil, but I was easily able to fit a folding chair and sports gear behind the engine. The front trunk was able to fit a few grocery bags as well.
+
+    </p>
+
+  </div>
+
+
+    <img
+      id="img1"
+      width="10%"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/2021_Chevrolet_Corvette_C8.jpg/800px-2021_Chevrolet_Corvette_C8.jpg"
+    />
+
+    <a href="https://en.wikipedia.org/wiki/Chevrolet_Corvette">corvette</a>
+    <a href="https://www.chevrolet.com/performance/corvette"> corvtte</a>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/MGrVlJw4RTk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YLNeo9arRlk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <ul>
+      <li>
+        <img
+          src="https://s1.cdn.autoevolution.com/images/news/2025-chevy-corvette-zr1-unofficially-drops-its-thick-camouflage-after-first-sighting-215570_1.jpg"
+        />
+        <img
+        width="45%"
+          src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-stingray-convertible-3lt-z51-370-1665496985.jpg"
+        />
+      </li>
+      <div id="images">
+      <img
+        src="https://www.cars.com/i/large/in/v2/stock_photos/53c9af5a-4aca-43be-973b-f892280954c4/58e4c663-f5ed-4fb1-8f77-b1c7159a8561.png"
+      />
+      <li>
+        </div>
+      </li>
+      <li></li>
+    </ul>
+    <ol>
+      <li>mercedes</li>
+      <li>toyota</li>
+      <li>kia</li>
+      <li>jeep</li>
+      <li>corvette</li>
+    </ol>
+
+
+    <table border=" 15px">
+    <tr>
+        <th>car</th>
+        <th>price</th>
+        <th>company</th>
+    </tr>
+    <tr>
+        <td>corolla</td>
+        <td>10,0000</td>
+        <td>toyota</td>
+    </tr>
+    
+    <tr>
+        <td>chevrolet</td>
+        <td>22,0000</td>
+        <td>General Motors</td>
+        
+    </tr>
+    
+    <tr>
+        <td>corolla</td>
+        <td>10,0000</td>
+        <td>toyota</td>
+    </tr><tr>
+        <td>corolla</td>
+        <td>10,0000</td>
+        <td>toyota</td>
+    </tr>
+    </table>
+
+
+  </body>
+</html>
